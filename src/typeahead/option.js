@@ -1,8 +1,9 @@
 /**
  * @jsx React.DOM
  */
+'use strict';
 
-var React = window.React || require('react/addons');
+var React = require('react/addons');
 
 /**
  * A single option within the TypeaheadSelector
@@ -30,7 +31,7 @@ var TypeaheadOption = React.createClass({
   render: function() {
     var classes = {
       hover: this.props.hover
-    }
+    };
     classes[this.props.customClasses.listItem] = !!this.props.customClasses.listItem;
     var classList = React.addons.classSet(classes);
 

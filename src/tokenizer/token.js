@@ -1,8 +1,9 @@
 /**
  * @jsx React.DOM
  */
+'use strict';
 
-var React = window.React || require('react');
+var React = require('react/addons');
 
 /**
  * Encapsulates the rendering of an option that has been "selected" in a
