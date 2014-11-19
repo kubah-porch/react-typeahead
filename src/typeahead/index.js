@@ -163,7 +163,7 @@ var Typeahead = React.createClass({
     if (handler) {
       handler(event);
     } else {
-      return this.props.onKeyDown(event);
+      this.props.onKeyDown(event);
     }
     // Don't propagate the keystroke back to the DOM/browser
     event.stopPropagation();
